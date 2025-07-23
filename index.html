@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mordern-Portfolio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+   <link rel="icon" type="image/png" 
+   href="https://w7.pngwing.com/pngs/267/531/png-transparent-portfolio-briefcase-showcase-business-adobe-portfolio-adobe-family-software-icon.png">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><button class="theme-toggle" id="themeToggle" title="O/E Dark Mode"><i class="fas fa-moon"></i></button></li>
+        </ul>
+    </nav>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="https://linkedin.com/in/rohitksingh45" class="social-icon linkedin" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/rohit4500-coder" class="social-icon github" target="_blank">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://instagram.com/dark_rohit._.45" class="social-icon instagram" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1 class="hero-title">Rohit Kumar Singh</h1>
+
+
+            <h2 class="hero-subtitle">
+                <span id="typingText"></span><span class="typing-cursor"></span>
+            </h2>
+
+            <p class="hero-description">
+                Crafting exceptional frontend experiences with modern web technologies. 
+                Passionate about building responsive user interfaces and interactive web applications.
+            </p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-content">
+                <div class="about-image slide-in-left">
+                   <div class="glass-card">
+                      <div class="image-wrapper">
+                        <img src="/dp.png" alt="Profile Photo" />
+                      </div>
+                    </div>
+                </div>
+
+                <div class="slide-in-right">
+                    <div class="glass-card">
+                        <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--primary);">Hello! I'm Rohit</h3>
+                        <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.8;">
+                            I'm a passionate Frontend Developer with expertise in creating 
+                            innovative web applications and user interfaces. I specialize in modern web 
+                            technologies including HTML, CSS, JavaScript, and Node.js for building responsive and interactive experiences.
+                        </p>
+                        <p style="margin-bottom: 20px; font-size: 1.1rem; line-height: 1.8;">
+                            My technical foundation includes strong programming skills in C and C++, combined with 
+                            modern web development technologies. I believe in writing clean, efficient code and 
+                            creating seamless user experiences that work across all devices.
+                        </p>
+                        <div style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 25px;">
+                            <span class="tech-tag">C/C++</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+    <div class="container">
+        <h2 class="section-title fade-in">Skills & Expertise</h2>
+        <div class="skills-grid">
+
+            <!-- Frontend Development -->
+            <div class="skill-category fade-in">
+                <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.4rem;">
+                    <i class="fas fa-code"></i> Frontend Development
+                </h3>
+                <div class="skill-item">
+                    <span>HTML5</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+                    <div class="skill-percent">90%</div>
+                </div>
+                <div class="skill-item">
+                    <span>CSS3</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    <div class="skill-percent">85%</div>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                    <div class="skill-percent">80%</div>
+                </div>
+                <div class="skill-item">
+                    <span>Responsive Design</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    <div class="skill-percent">85%</div>
+                </div>
+            </div>
+
+            <!-- Backend & Programming -->
+            <div class="skill-category fade-in">
+                <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.4rem;">
+                    <i class="fas fa-server"></i> Backend & Programming
+                </h3>
+                <div class="skill-item">
+                    <span>Node.js</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                    <div class="skill-percent">75%</div>
+                </div>
+                <div class="skill-item">
+                    <span>C Programming</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    <div class="skill-percent">85%</div>
+                </div>
+                <div class="skill-item">
+                    <span>C++</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                    <div class="skill-percent">80%</div>
+                </div>
+                <div class="skill-item">
+                    <span>Server-side Logic</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                    <div class="skill-percent">70%</div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skill-category fade-in">
+                <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.4rem;">
+                    <i class="fas fa-tools"></i> Tools & Technologies
+                </h3>
+                <div class="skill-item">
+                    <span>Git Version Control</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 75%;"></div></div>
+                    <div class="skill-percent">75%</div>
+                </div>
+                <div class="skill-item">
+                    <span>Web APIs</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 70%;"></div></div>
+                    <div class="skill-percent">70%</div>
+                </div>
+                <div class="skill-item">
+                    <span>Cross-browser Compatibility</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+                    <div class="skill-percent">80%</div>
+                </div>
+                <div class="skill-item">
+                    <span>Problem Solving</span>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+                    <div class="skill-percent">85%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-sign-in-alt"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Login Page System</h3>
+                        <p>Responsive login page with modern UI design, form validation, and secure authentication features. Built with HTML, CSS, and JavaScript for seamless user experience.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Form Validation</span>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; gap: 10px;">
+                            <a href="#" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/rohit4500-coder" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital ID Card Generator</h3>
+                        <p>Interactive ID card generator with customizable templates, photo upload functionality, and print-ready output. Features dynamic content generation and responsive design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Canvas API</span>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; gap: 10px;">
+                            <a href="#" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/rohit4500-coder" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in">
+                    <div class="project-image">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p>Modern, responsive portfolio website showcasing projects, skills, and achievements. Features smooth animations, dark/light theme toggle, and optimized performance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">GSAP</span>
+                        </div>
+                        <div style="margin-top: 20px; display: flex; gap: 10px;">
+                            <a href="#" class="btn btn-primary" style="padding: 8px 16px; font-size: 0.9rem;">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="https://github.com/rohit4500-coder" class="btn btn-secondary" style="padding: 8px 16px; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Resume</h2>
+            <div class="resume-content fade-in">
+                <div class="glass-card">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 20px; color: var(--primary);">
+                        <i class="fas fa-file-download"></i> Download My Resume
+                    </h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9;">
+                        Get a comprehensive overview of my experience, skills, and achievements. 
+                        My resume includes detailed information about my professional journey, 
+                        education, and technical expertise.
+                    </p>
+                    <button class="download-btn" onclick="downloadResume(event)" id="resumeBtn">
+                    <i class="fas fa-download"></i> Download Resume
+                    </button>
+
+                    <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">
+                        Last updated: June 2025
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">What People Say</h2>
+            <div class="testimonials-slider fade-in">
+                <div class="testimonial">
+                    <p class="testimonial-text">
+                        "Rohit is an exceptional developer who consistently delivers high-quality work. 
+                        His attention to detail and problem-solving skills are outstanding. He transformed 
+                        our complex requirements into an elegant, user-friendly solution."
+                    </p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong><br>
+                        <span style="opacity: 0.8;">Product Manager, TechCorp</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Let's Work Together</h2>
+            <div class="contact-content">
+                <div class="slide-in-left">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <h3 style="margin-bottom: 25px; color: var(--primary); font-size: 1.5rem;">Send Me a Message</h3>
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                        <p style="margin-top: 15px; font-size: 0.9rem; opacity: 0.7; text-align: center;">
+                            Demo form - Messages will be displayed as alerts
+                        </p>
+                    </form>
+                </div>
+                <div class="contact-info slide-in-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px; color: var(--primary);">Email</h4>
+                            <p>rohitsinghkusauni@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px; color: var(--primary);">Phone</h4>
+                            <p>+91 7644862589</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px; color: var(--primary);">Location</h4>
+                            <p>Malout, Punjab, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4 style="margin-bottom: 5px; color: var(--primary);">Availability</h4>
+                            <p>Open to new opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+</html>
