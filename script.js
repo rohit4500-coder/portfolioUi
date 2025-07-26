@@ -196,7 +196,7 @@
 
         // Resume download
   function downloadResume(event) {
-    const pdfPath = "assets/resumepdf.pdf";
+    const pdfPath = "resumepdf.pdf";
 
     const a = document.createElement('a');
     a.href = pdfPath;
@@ -214,7 +214,7 @@
     setTimeout(() => {
         btn.innerHTML = originalText;
         btn.style.background = '';
-    }, 2000);
+    }, 6000);
 }
 
 
