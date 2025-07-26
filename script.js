@@ -196,7 +196,7 @@
 
         // Resume download
   function downloadResume(event) {
-    const pdfPath = "resumepdf.pdf";
+    const pdfPath = "assets/resumepdf.pdf";
 
     const a = document.createElement('a');
     a.href = pdfPath;
@@ -326,3 +326,74 @@
   })();
 
     
+
+
+
+
+
+// const menuToggle = document.getElementById('menuToggle');
+// const navLinks = document.querySelector('.nav-links');
+const overlay = document.getElementById('overlay');
+
+// Toggle menu and overlay
+menuToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  navLinks.classList.toggle('show');
+  overlay.classList.toggle('active');
+});
+
+// Hide menu when clicking overlay
+overlay.addEventListener('click', () => {
+  navLinks.classList.remove('show');
+  overlay.classList.remove('active');
+});
+
+// Hide menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+    navLinks.classList.remove('show');
+    overlay.classList.remove('active');
+  }
+});
+
+// Optional: Hide menu after clicking a nav link (on mobile)
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+    overlay.classList.remove('active');
+  });
+});
+
+
+// const menuToggle = document.getElementById('menuToggle');
+// const navLinks = document.querySelector('.nav-links');
+// const overlay = document.getElementById('overlay');
+
+// Toggle menu and overlay
+menuToggle.addEventListener('click', (e) => {
+  e.stopPropagation();
+  navLinks.classList.toggle('show');
+  overlay.classList.toggle('active');
+});
+
+// Hide menu when clicking overlay
+overlay.addEventListener('click', () => {
+  navLinks.classList.remove('show');
+  overlay.classList.remove('active');
+});
+
+// Hide menu when clicking outside
+document.addEventListener('click', (e) => {
+  if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+    navLinks.classList.remove('show');
+    overlay.classList.remove('active');
+  }
+});
+
+// Hide menu after clicking a nav link (on mobile)
+document.querySelectorAll('.nav-link').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('show');
+    overlay.classList.remove('active');
+  });
+});
