@@ -1089,9 +1089,9 @@ html, body {
 
 section, div, canvas {
     max-width: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 body {
-    overflow-x: hidden;
+  /*  overflow-x: hidden;*/
 }
