@@ -67,17 +67,17 @@ The website is designed to be easy to use, with a clean and minimalistic design 
 
 Here are some screenshots of the website:
 
-[Insert screenshots here]
+![Portfolio Screenshot](file:///C:/Users/Rohit%20Singh/Dropbox/Screenshots/portfolio.png)
 
 **📦 API Reference**
 ------------------
 
-This project does not have an API reference.
+This project does not have an API reference. but may be in future.
 
 **👤 Author**
 ------------
 
-This project was created by [Your Name].
+This project was created by Rohit Kumar Singh.
 
 **📝 License**
 ------------
