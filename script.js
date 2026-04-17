@@ -196,11 +196,11 @@
 
         // Resume download
   function downloadResume(event) {
-    const pdfPath = "resumepdf.pdf";
+    const pdfPath = "Rohit_Kr_Singh_Resume.pdf";
 
     const a = document.createElement('a');
     a.href = pdfPath;
-    a.download = 'resumepdf.pdf';
+    a.download = 'Rohit_Kr_Singh_Resume.pdf';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
